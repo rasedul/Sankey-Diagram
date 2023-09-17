@@ -1,6 +1,6 @@
 import pandas as pd
 import plotly.graph_objects as go
-df = pd.read_csv(r"https://github.com/rasedul/Sankey-Diagram/blob/main/ticket.csv")
+df = pd.read_csv(r"https://raw.githubusercontent.com/rasedul/Sankey-Diagram/main/ticket.csv")
 
 # Source value create
 df_temp1 = df.groupby(["Pclass","Sex"]) ["Name"].count().reset_index()
